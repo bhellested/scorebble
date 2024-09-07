@@ -1,4 +1,3 @@
-import React from "react";
 import specialTiles from "../extras/SpecialTiles";
 import tileValues from "../extras/TileValues";
 interface Props {

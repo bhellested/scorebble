@@ -404,7 +404,9 @@ const Board: React.FC = () => {
         moveString += `${word.word} `;
       }
       moveString += `for a total of ${turnScore} points.`;
-      moveHistory.push(moveString);
+      let newMoveHistory = [...moveHistory];
+      newMoveHistory.push(moveString);
+      setMoveHistory(newMoveHistory);
       
       console.log("Valid words: ", wordsPlayed);
       console.log("Turn Score: ", turnScore);
